@@ -1,0 +1,214 @@
+🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹2017-04-01 07:19:42 +0000-----http://112.74.63.130:80/edison/api/room/getRoomByUser-----{
+	pageNum = 1,
+	pageSize = 666
+}------{
+	code = 200,
+	data = {
+	pageSize = 666,
+	totalRow = 3,
+	pageNumber = 1,
+	lastPage = 1,
+	firstPage = 1,
+	list = [
+{
+	createTime = 2017-03-26 16:27:54,
+	id = 48,
+	roomName = 好房间,
+	deviceCount = 2,
+	cover = /upload/cover/1490952737931.jpg,
+	userId = 7
+},
+{
+	createTime = 2017-03-31 11:07:03,
+	id = 87,
+	roomName = 未命名,
+	deviceCount = 1,
+	cover = /upload/official_cover/1490953222880.jpg,
+	userId = 7
+},
+{
+	createTime = 2017-04-01 14:46:58,
+	id = 99,
+	roomName = 未命名,
+	deviceCount = 0,
+	cover = /upload/official_cover/1490953241351.jpg,
+	userId = 7
+}
+],
+	totalPage = 1
+},
+	success = 1,
+	msg = 操作成功
+}------Call Backtrace of 20 threads:
+Backtrace of Thread 2567:
+libsystem_kernel.dylib          0x107b26f72 mach_msg_trap + 10
+CoreFoundation                  0x10441aba4 __CFRunLoopServiceMachPort + 212
+CoreFoundation                  0x10441a021 __CFRunLoopRun + 1345
+CoreFoundation                  0x104419884 CFRunLoopRunSpecific + 420
+Edison                          0x102ad88e9 HandleException + 553
+CoreFoundation                  0x1044fa5bc __handleUncaughtException + 732
+libobjc.A.dylib                 0x103ad1496 _ZL15_objc_terminatev + 94
+libc++abi.dylib                 0x107695e69 _ZSt11__terminatePFvvE + 8
+libc++abi.dylib                 0x107695af4 __cxa_rethrow + 99
+libobjc.A.dylib                 0x103ad13b7 objc_exception_rethrow + 40
+CoreFoundation                  0x10441990b CFRunLoopRunSpecific + 555
+GraphicsServices                0x10a4dba6f GSEventRunModal + 161
+UIKit                           0x105e2cc68 UIApplicationMain + 159
+Edison                          0x102b04b9f main + 111
+libdyld.dylib                   0x10780168d start + 1
+
+Backtrace of Thread 3843:
+libsystem_kernel.dylib          0x107b2defa kevent_qos + 10
+libdispatch.dylib               0x1077a0070 _dispatch_mgr_invoke + 248
+libdispatch.dylib               0x10779fe72 _dispatch_mgr_thread + 54
+
+Backtrace of Thread 11555:
+libsystem_kernel.dylib          0x107b2d5e2 __workq_kernreturn + 10
+libsystem_pthread.dylib         0x107b5c341 start_wqthread + 13
+
+Backtrace of Thread 13315:
+libsystem_kernel.dylib          0x107b26f72 mach_msg_trap + 10
+CoreFoundation                  0x10441aba4 __CFRunLoopServiceMachPort + 212
+CoreFoundation                  0x10441a021 __CFRunLoopRun + 1345
+CoreFoundation                  0x104419884 CFRunLoopRunSpecific + 420
+Foundation                      0x1035b2760 -[NSRunLoop(NSRunLoop) runMode:beforeDate:] + 274
+Foundation                      0x10363a1b1 -[NSRunLoop(NSRunLoop) runUntilDate:] + 78
+UIKit                           0x1068af741 -[UIEventFetcher threadMain] + 118
+Foundation                      0x1035c2654 __NSThread__start__ + 1243
+libsystem_pthread.dylib         0x107b5e99d _pthread_body + 131
+libsystem_pthread.dylib         0x107b5e91a _pthread_start + 168
+libsystem_pthread.dylib         0x107b5c351 thread_start + 13
+
+Backtrace of Thread 18439:
+libsystem_kernel.dylib          0x107b26fc6 semaphore_timedwait_trap + 10
+Edison                          0x102aed477 __39-[SeMonitorController registerObserver]_block_invoke + 71
+libdispatch.dylib               0x10778b978 _dispatch_call_block_and_release + 12
+libdispatch.dylib               0x1077b50cd _dispatch_client_callout + 8
+libdispatch.dylib               0x107794312 _dispatch_queue_override_invoke + 1426
+libdispatch.dylib               0x107796385 _dispatch_root_queue_drain + 720
+libdispatch.dylib               0x107796059 _dispatch_worker_thread3 + 123
+libsystem_pthread.dylib         0x107b5e4de _pthread_wqthread + 1129
+libsystem_pthread.dylib         0x107b5c341 start_wqthread + 13
+
+Backtrace of Thread 21519:
+libsystem_kernel.dylib          0x107b26f72 mach_msg_trap + 10
+CoreFoundation                  0x10441aba4 __CFRunLoopServiceMachPort + 212
+CoreFoundation                  0x10441a021 __CFRunLoopRun + 1345
+CoreFoundation                  0x104419884 CFRunLoopRunSpecific + 420
+CFNetwork                       0x1081a4b98 +[NSURLConnection(Loader) _resourceLoadLoop:] + 361
+Foundation                      0x1035c2654 __NSThread__start__ + 1243
+libsystem_pthread.dylib         0x107b5e99d _pthread_body + 131
+libsystem_pthread.dylib         0x107b5e91a _pthread_start + 168
+libsystem_pthread.dylib         0x107b5c351 thread_start + 13
+
+Backtrace of Thread 36099:
+libsystem_kernel.dylib          0x107b2d10a __semwait_signal + 10
+libc++.1.dylib                  0x1033cb67b _ZNSt3__111this_thread9sleep_forERKNS_6chrono8durationIxNS_5ratioILl1ELl1000000000EEEEE + 80
+JavaScriptCore                  0x10f9c3bf3 _ZN7bmalloc4Heap8scavengeERNSt3__111unique_lockINS_11StaticMutexEEENS1_6chrono8durationIxNS1_5ratioILl1ELl1000EEEEE + 275
+JavaScriptCore                  0x10f9c39a4 _ZN7bmalloc4Heap18concurrentScavengeEv + 68
+JavaScriptCore                  0x10f9c4f01 _ZN7bmalloc9AsyncTaskINS_4HeapEMS1_FvvEE13threadRunLoopEv + 97
+JavaScriptCore                  0x10f9c4e09 _ZN7bmalloc9AsyncTaskINS_4HeapEMS1_FvvEE16threadEntryPointEPS4_ + 9
+JavaScriptCore                  0x10f9c50bd _ZNSt3__114__thread_proxyINS_5tupleIJPFvPN7bmalloc9AsyncTaskINS2_4HeapEMS4_FvvEEEES8_EEEEEPvSC_ + 93
+libsystem_pthread.dylib         0x107b5e99d _pthread_body + 131
+libsystem_pthread.dylib         0x107b5e91a _pthread_start + 168
+libsystem_pthread.dylib         0x107b5c351 thread_start + 13
+
+Backtrace of Thread 37127:
+libsystem_kernel.dylib          0x107b2d5e2 __workq_kernreturn + 10
+libsystem_pthread.dylib         0x107b5c341 start_wqthread + 13
+
+Backtrace of Thread 36615:
+libsystem_kernel.dylib          0x107b2d5e2 __workq_kernreturn + 10
+libsystem_pthread.dylib         0x107b5c341 start_wqthread + 13
+
+Backtrace of Thread 38151:
+libsystem_kernel.dylib          0x107b2cdb6 __psynch_cvwait + 10
+libc++.1.dylib                  0x10338a58d _ZNSt3__118condition_variable4waitERNS_11unique_lockINS_5mutexEEE + 47
+JavaScriptCore                  0x10f99f25e _ZN3WTF10ParkingLot21parkConditionallyImplEPKvRKNS_12ScopedLambdaIFbvEEERKNS3_IFvvEEENSt3__16chrono10time_pointINSD_12steady_clockENSD_8durationIxNSC_5ratioILl1ELl1000000000EEEEEEE + 2622
+JavaScriptCore                  0x10f70158a _ZN3JSC11JITWorklist9runThreadEv + 234
+JavaScriptCore                  0x10f701a1d _ZNSt3__110__function6__funcIZN3JSC11JITWorklistC1EvE3$_0NS_9allocatorIS4_EEFvvEEclEv + 13
+JavaScriptCore                  0x10f9b5432 _ZN3WTFL16threadEntryPointEPv + 178
+JavaScriptCore                  0x10f9b57df _ZN3WTFL19wtfThreadEntryPointEPv + 15
+libsystem_pthread.dylib         0x107b5e99d _pthread_body + 131
+libsystem_pthread.dylib         0x107b5e91a _pthread_start + 168
+libsystem_pthread.dylib         0x107b5c351 thread_start + 13
+
+Backtrace of Thread 37947:
+libsystem_kernel.dylib          0x107b2cdb6 __psynch_cvwait + 10
+libc++.1.dylib                  0x10338a58d _ZNSt3__118condition_variable4waitERNS_11unique_lockINS_5mutexEEE + 47
+JavaScriptCore                  0x10f99f25e _ZN3WTF10ParkingLot21parkConditionallyImplEPKvRKNS_12ScopedLambdaIFbvEEERKNS3_IFvvEEENSt3__16chrono10time_pointINSD_12steady_clockENSD_8durationIxNSC_5ratioILl1ELl1000000000EEEEEEE + 2622
+JavaScriptCore                  0x10f99e5d2 _ZN3WTF18ParallelHelperPool21waitForClientWithTaskERKNS_6LockerINS_8LockBaseEEE + 370
+JavaScriptCore                  0x10f99e343 _ZN3WTF18ParallelHelperPool16helperThreadBodyEv + 83
+JavaScriptCore                  0x10f9b5432 _ZN3WTFL16threadEntryPointEPv + 178
+JavaScriptCore                  0x10f9b57df _ZN3WTFL19wtfThreadEntryPointEPv + 15
+libsystem_pthread.dylib         0x107b5e99d _pthread_body + 131
+libsystem_pthread.dylib         0x107b5e91a _pthread_start + 168
+libsystem_pthread.dylib         0x107b5c351 thread_start + 13
+
+Backtrace of Thread 38659:
+libsystem_kernel.dylib          0x107b2cdb6 __psynch_cvwait + 10
+libc++.1.dylib                  0x10338a58d _ZNSt3__118condition_variable4waitERNS_11unique_lockINS_5mutexEEE + 47
+JavaScriptCore                  0x10f99f25e _ZN3WTF10ParkingLot21parkConditionallyImplEPKvRKNS_12ScopedLambdaIFbvEEERKNS3_IFvvEEENSt3__16chrono10time_pointINSD_12steady_clockENSD_8durationIxNSC_5ratioILl1ELl1000000000EEEEEEE + 2622
+JavaScriptCore                  0x10f99e5d2 _ZN3WTF18ParallelHelperPool21waitForClientWithTaskERKNS_6LockerINS_8LockBaseEEE + 370
+JavaScriptCore                  0x10f99e343 _ZN3WTF18ParallelHelperPool16helperThreadBodyEv + 83
+JavaScriptCore                  0x10f9b5432 _ZN3WTFL16threadEntryPointEPv + 178
+JavaScriptCore                  0x10f9b57df _ZN3WTFL19wtfThreadEntryPointEPv + 15
+libsystem_pthread.dylib         0x107b5e99d _pthread_body + 131
+libsystem_pthread.dylib         0x107b5e91a _pthread_start + 168
+libsystem_pthread.dylib         0x107b5c351 thread_start + 13
+
+Backtrace of Thread 39171:
+libsystem_kernel.dylib          0x107b2cdb6 __psynch_cvwait + 10
+libc++.1.dylib                  0x10338a58d _ZNSt3__118condition_variable4waitERNS_11unique_lockINS_5mutexEEE + 47
+JavaScriptCore                  0x10f99f25e _ZN3WTF10ParkingLot21parkConditionallyImplEPKvRKNS_12ScopedLambdaIFbvEEERKNS3_IFvvEEENSt3__16chrono10time_pointINSD_12steady_clockENSD_8durationIxNSC_5ratioILl1ELl1000000000EEEEEEE + 2622
+JavaScriptCore                  0x10f99e5d2 _ZN3WTF18ParallelHelperPool21waitForClientWithTaskERKNS_6LockerINS_8LockBaseEEE + 370
+JavaScriptCore                  0x10f99e343 _ZN3WTF18ParallelHelperPool16helperThreadBodyEv + 83
+JavaScriptCore                  0x10f9b5432 _ZN3WTFL16threadEntryPointEPv + 178
+JavaScriptCore                  0x10f9b57df _ZN3WTFL19wtfThreadEntryPointEPv + 15
+libsystem_pthread.dylib         0x107b5e99d _pthread_body + 131
+libsystem_pthread.dylib         0x107b5e91a _pthread_start + 168
+libsystem_pthread.dylib         0x107b5c351 thread_start + 13
+
+Backtrace of Thread 46627:
+libsystem_kernel.dylib          0x107b2d5e2 __workq_kernreturn + 10
+libsystem_pthread.dylib         0x107b5c341 start_wqthread + 13
+
+Backtrace of Thread 5407:
+libsystem_kernel.dylib          0x107b2d5e2 __workq_kernreturn + 10
+libsystem_pthread.dylib         0x107b5c341 start_wqthread + 13
+
+Backtrace of Thread 47391:
+libsystem_kernel.dylib          0x107b2d5e2 __workq_kernreturn + 10
+libsystem_pthread.dylib         0x107b5c341 start_wqthread + 13
+
+Backtrace of Thread 48395:
+libsystem_kernel.dylib          0x107b26f72 mach_msg_trap + 10
+libsystem_kernel.dylib          0x107b231f2 thread_get_state + 424
+Edison                          0x102b8efda bs_mach_copyMem + 58
+Edison                          0x102b8e6ee _bs_backtraceOfThread + 670
+Edison                          0x102b8ee7f +[BSBacktraceLogger bs_backtraceOfAllThread] + 191
+Edison                          0x102b4d9da __58-[GJHTTPManager requestWithUrl:method:parameters:request:]_block_invoke_3 + 170
+libdispatch.dylib               0x10778b978 _dispatch_call_block_and_release + 12
+libdispatch.dylib               0x1077b50cd _dispatch_client_callout + 8
+libdispatch.dylib               0x10779665f _dispatch_root_queue_drain + 1450
+libdispatch.dylib               0x107796059 _dispatch_worker_thread3 + 123
+libsystem_pthread.dylib         0x107b5e4de _pthread_wqthread + 1129
+libsystem_pthread.dylib         0x107b5c341 start_wqthread + 13
+
+Backtrace of Thread 50691:
+libsystem_kernel.dylib          0x107b2d5e2 __workq_kernreturn + 10
+libsystem_pthread.dylib         0x107b5c341 start_wqthread + 13
+
+Backtrace of Thread 51459:
+libsystem_kernel.dylib          0x107b2d5e2 __workq_kernreturn + 10
+libsystem_pthread.dylib         0x107b5c341 start_wqthread + 13
+
+Backtrace of Thread 55815:
+libsystem_kernel.dylib          0x107b2d10a __semwait_signal + 10
+Foundation                      0x10365d65c +[NSThread sleepForTimeInterval:] + 156
+Edison                          0x102afdcb2 -[ProgressHUD timedHide] + 210
+Foundation                      0x1035c2654 __NSThread__start__ + 1243
+libsystem_pthread.dylib         0x107b5e99d _pthread_body + 131
+libsystem_pthread.dylib         0x107b5e91a _pthread_start + 168
+libsystem_pthread.dylib         0x107b5c351 thread_start + 13
+
